@@ -26,7 +26,7 @@ const AuthorizeButton = () => {
       "user-read-private",
    ];
 
-   const AUTH_URL = "https://accounts.spotify.com/authorize";
+   const AUTH_URL = `${process.env.NEXT_PUBLIC_SPOTIFY_URL}/authorize`;
 
    const url = `${AUTH_URL}?client_id=${
       process.env.NEXT_PUBLIC_CLIENT_ID
